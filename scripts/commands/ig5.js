@@ -3,7 +3,7 @@ module.exports.config = {
   name: "ig2",
   version: "1.0.0", 
   permission: 0,
-  credits: "nayan",
+  credits: "Rahad",
   description: "", 
   prefix: true,
   category: "user",
