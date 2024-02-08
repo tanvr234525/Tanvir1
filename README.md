@@ -59,5 +59,5 @@ step 8 : click on it and then click on ``copy fbstate``.</br>
 step 9 : paste the copied data into the ``Nayanstate.json`` file.</br>
 
 step 10 : finally, click on ``run`` to initiate the bot.</br>
-
+</br>
 
