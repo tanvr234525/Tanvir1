@@ -11,7 +11,6 @@ module.exports.config = {
   cooldowns: 5, 
  
 };
-};
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
