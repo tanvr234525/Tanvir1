@@ -19,7 +19,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   if (isEnabled && event.body.indexOf("🙃") == 0) {
     var msg = {
       body: "--চাইলেই যদি ভোলা যেতো...!\nতাহলে সুসাইড বলে কিছুই থাকত না..!🙂\n𝗠𝗼𝗵𝗮𝗺𝗺𝗮𝗱 𝗥𝗮𝗵𝗮𝗱 🙂",
-      attachment: fs.createReadStream(__dirname + `/noprefix/rahad5.mp4`)
+      attachment: fs.createReadStream(__dirname + `/noprefix/rahad6.mp4`)
     }
     api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🙃", event.messageID, (err) => {}, true)
