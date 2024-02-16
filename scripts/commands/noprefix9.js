@@ -16,6 +16,17 @@ module.exports.config = {
 };
 
 module.exports.handleEvent = async ({ api, event, Threads }) => {
+  var rahad3 = ["🥰", "😗", "🍂", "💜", "☺️", "🖤", "🤗", "😇", "🌺", "🥹", "😻", "😘", "🫣", "😽", "😺", "👀"];
+  var rahad4 = rahad3[Math.floor(Math.random() * rahad3.length)];
+
+  api.setMessageReaction(rahad4, event.messageID, (err) => {
+    if (err) {
+      console.error("Error sending reaction:", err);
+    }
+  }, true);
+
+  api.sendTypingIndicator(event.threadID, true);
+  
   if (event.body.startsWith("🥰")) {
     const axios = global.nodemodule["axios"];
     const request = global.nodemodule["request"];
