@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "1",
+  name: "autosetname",
   eventType: ["log:user-nickname"],
   version: "0.0.1",//beta
   credits: "Nayan",
