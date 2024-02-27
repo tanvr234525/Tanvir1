@@ -18,16 +18,25 @@ module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOB
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-var link =["https://i.imgur.com/doVUISz.jpg", 
-            
-            "https://i.imgur.com/doVUISz.jpg", 
-            
-"https://i.imgur.com/EWDwKvO.jpg",
-            
-            "https://i.imgur.com/EWDwKvO.jpg"];
+var link =["https://i.postimg.cc/VvMTcQgg/20230120-162933.jpg",
+"https://i.postimg.cc/FztWpCvL/FB-IMG-1679821257317.jpg"];
   
-var callback = () => api.sendMessage({body:`𝗗𝗢 𝗡𝗢𝗧 𝗧𝗥𝗨𝗦𝗧 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗢𝗣𝗘𝗥𝗔 𝗧𝗢𝗥\n
-------------------------------------------------\n𝗡𝗮𝗺𝗲       : 𝗠𝗼𝗵𝗮𝗺𝗺𝗮𝗱 𝗥𝗮𝗵𝗮𝗱\n𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : 𝗠𝗼𝗵𝗮𝗺𝗺𝗮𝗱 𝗥𝗮𝗵𝗮𝗱\n𝗥𝗲𝗹𝗶𝗴𝗶𝗼𝗻    : (𝗜𝘀𝗹𝗮𝗺)\n𝗣𝗲𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 : (𝗗𝗵𝗮𝗸𝗮)\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 :𝗦𝗵𝗮𝗵𝗿𝗮𝘀𝘁𝗶 𝗖𝗵𝗮𝗻𝗱𝗽𝘂𝗿\n𝗚𝗲𝗻𝗱𝗲𝗿     : (𝗠𝗮𝗹𝗲)\n𝗔𝗴𝗲            :  (𝟮𝟬)\n𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝘀𝗵𝗶𝗽 : (𝗦𝗶𝗻𝗴𝗹𝗲)\n𝗪𝗼𝗿𝗸         : 𝗧𝗵𝗮𝗶 𝗔𝗻𝗱 𝗚𝗹𝗮𝘀𝘀\n𝗚𝗺𝗮𝗶𝗹        :  mdrahadhossain00@gmail.com\n𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 :  wa.me/+8801762212402\n𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺  : t.me/rabbyhosainRahad\n𝗙𝗯 𝗹𝗶𝗻𝗸   : https://www.facebook.com/www.xnx.com.9
+var callback = () => api.sendMessage({body:`DO NOT TRUST THE BOT OPERATOR
+--------------------------------------------
+𝐍𝐚𝐦𝐞       : 𝐈𝐓𝐒'𝐒𝐔𝐑𝐉𝐎
+𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : 𝐏𝐑𝐈𝐍𝐂𝐄 𝐒𝐔𝐑𝐉𝐎
+𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧   : 𝐈𝐬𝐥𝐚𝐦
+𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐓𝐎𝐍𝐆𝐈, 𝐆𝐚𝐣𝐢𝐩𝐮𝐫
+𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐤𝐨𝐦𝐮 𝐧𝐚
+𝐆𝐞𝐧𝐝𝐞𝐫.   : 𝐌𝐚𝐥𝐞
+𝐀𝐠𝐞           : 𝟏𝟖+
+𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 : 𝐒𝐢𝐧𝐠𝐥𝐞
+𝐖𝐨𝐫𝐤        : 𝐒𝐭𝐮𝐝𝐞𝐧𝐭
+𝐆𝐦𝐚𝐢𝐥       : rjsurjo341@gmail.com
+𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: wa.me/+8801892495482
+𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  : t.me/👅💦💋
+𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/surjo.bad.boy.king.2.0
+ https://www.facebook.com/bad.boy.king.SURJO.0.2
 `,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
