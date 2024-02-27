@@ -48,13 +48,13 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://drive.google.com/uc?id=1QrSCgq16zgsLddZFyM6Tj-9W2iW5psVT';
+    let gifUrl = 'https://drive.google.com/uc?id=1oHTypzcET9ULp7uKWuxh2VLO1T9RVILv';
 let gifPath = __dirname + '/Nayan/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
-    return api.sendMessage("চলে এসেছি আমি রাহাদ বট🥀😉", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 ↤
+    return api.sendMessage("চলে এসেছি আমি সূর্য বট🥀😉🤖", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 ↤
 🌱আ্ঁ'স্ঁ'সা্ঁ'লা্ঁ'মু্ঁ ও্ঁ'য়া্ঁ'লা্ঁ'ই্ঁ'কু্ঁ'ম্ঁ🥀🌼
 <------------------------------>  
 𝗕𝗼𝘁 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹 !!! 
@@ -67,18 +67,18 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
 <<<<<------------------------------>>>>>
 𝗔𝗻𝗱 𝗙𝗼𝗿 𝗔𝗻𝘆 𝗥𝗲𝗽𝗼𝗿𝘁 𝗢𝗿 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗕𝗼𝘁 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿
 
-۞ 𝗢𝘄𝗻𝗲𝗿 : 𝗠𝗼𝗵𝗮𝗺𝗺𝗮𝗱 𝗥𝗮𝗵𝗮𝗱 
+۞ 𝗢𝘄𝗻𝗲𝗿 : IT'Z SURJO 
 
 ✷ 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸: 
-https://www.facebook.com/md.rahad.hosain18
+https://www.facebook.com/bad.boy.king.SURJO.0.2
 
-❊ 𝗣𝗮𝗿𝘀𝗼𝗻𝗮𝗹 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : m.me/www.xnx.com9
+❊ 𝗣𝗮𝗿𝘀𝗼𝗻𝗮𝗹 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : https://www.facebook.com/ay.link.niya.jah.420
 
-✲ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺: t.me/rabbyhosainRahad
+✲ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺: 😷😷
 
-❁ 𝗘𝗺𝗮𝗶𝗹: mdrahadhosain00@gmail.com
+❁ 𝗘𝗺𝗮𝗶𝗹: 😷
 
-✿ 𝗪𝗣: 0131328**62`, attachment: fs.createReadStream(gifPath)}, threadID));
+✿ 𝗪𝗣: 01305002014`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
 .catch(error => {
     console.error(error);
