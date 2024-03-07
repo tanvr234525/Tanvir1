@@ -8,7 +8,13 @@ module.exports.config = {
   category: "user", 
   usages: "@",
   cooldowns: 5,
-  dependencies: {"fs-extra": "","discord.js": "","discord-image-generation" :"","node-superfetch": ""}
+  dependencies: {
+	  "fs-extra": "",
+	  "axios": "",
+	  "canvas" :"",
+	  "jimp": "",
+	  "node-superfetch": ""
+  }
 };
 
 module.exports.run = async ({ event, api, args, Users }) => {
