@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "toilet",
+	name: "egg",
   version: "1.0.0",
   permission: 0,
   credits: "Nayan",
@@ -17,32 +17,19 @@ module.exports.config = {
   }
 };
 
-module.exports.circle = async (image) => {
-	  const jimp = global.nodemodule['jimp'];
-  	image = await jimp.read(image);
-  	image.circle();
-  	return await image.getBufferAsync("image/png");
-};
-
 module.exports.run = async ({ event, api, args, Users }) => {
-try {
-  const Canvas = global.nodemodule['canvas'];
+  const DIG = global.nodemodule["discord-image-generation"];
+  const Discord = global.nodemodule['discord.js'];
   const request = global.nodemodule["node-superfetch"];
-  const jimp = global.nodemodule["jimp"];
   const fs = global.nodemodule["fs-extra"];
-  var path_toilet = __dirname+'/cache/toilet.png'; 
+   let { senderID, threadID, messageID } = event;
   var id = Object.keys(event.mentions)[0] || event.senderID;
-  const canvas = Canvas.createCanvas(500, 670);
-	const ctx = canvas.getContext('2d');
-	const background = await Canvas.loadImage('https://cdn.discordapp.com/attachments/779441456464003122/812706484240121876/unknown.png');
   
-	var avatar = await request.get(`https://graph.facebook.com/${id}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`);
-	avatar = await this.circle(avatar.body);
-	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-	ctx.drawImage(await Canvas.loadImage(avatar), 135, 350, 205, 205);
-	const imageBuffer = canvas.toBuffer();
-	fs.writeFileSync(path_toilet,imageBuffer);
-	 api.sendMessage({attachment: fs.createReadStream(path_toilet, {'highWaterMark': 128 * 1024}), body: "🐸🐸"}, event.threadID, () => fs.unlinkSync(path_toilet), event.messageID);
-}
-catch(e) {api.sendMessage(e.stack, event.threadID )}
+  var avatar = (await request.get(`https://graph.facebook.com/${id}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).body;
+  
+  let img = await new DIG.Mms().getImage(avatar);
+  let attach = new Discord.MessageAttachment(img);
+  var path_trash = __dirname + "/cache/egg.png";
+  fs.writeFileSync(path_trash, attach.attachment);
+  api.sendMessage({attachment: fs.createReadStream(path_trash)}, event.threadID, () => fs.unlinkSync(path_trash), event.messageID);
 }
