@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "married",
+	name: "marreid",
   version: "1.0.0",
   permission: 0,
   credits: "Nayan",
@@ -22,9 +22,9 @@ module.exports.onLoad = async() => {
     const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
     const { downloadFile } = global.utils;
     const dirMaterial = __dirname + `/cache/canvas/`;
-    const path = resolve(__dirname, 'cache/canvas', 'married.png');
+    const path = resolve(__dirname, 'cache/canvas', 'marriedv3.png');
     if (!existsSync(dirMaterial + "canvas")) mkdirSync(dirMaterial, { recursive: true });
-    if (!existsSync(path)) await downloadFile("https://i.ibb.co/PjWvsBr/13bb9bb05e53ee24893940892b411ad2.png", path);
+    if (!existsSync(path)) await downloadFile("https://i.ibb.co/5TwSHpP/Guardian-Place-full-1484178.jpg", path);
 }
 
 async function makeImage({ one, two }) {
@@ -34,7 +34,7 @@ async function makeImage({ one, two }) {
     const jimp = global.nodemodule["jimp"];
     const __root = path.resolve(__dirname, "cache", "canvas");
 
-    let batgiam_img = await jimp.read(__root + "/married.png");
+    let batgiam_img = await jimp.read(__root + "/marriedv3.png");
     let pathImg = __root + `/batman${one}_${two}.png`;
     let avatarOne = __root + `/avt_${one}.png`;
     let avatarTwo = __root + `/avt_${two}.png`;
@@ -47,7 +47,7 @@ async function makeImage({ one, two }) {
     
     let circleOne = await jimp.read(await circle(avatarOne));
     let circleTwo = await jimp.read(await circle(avatarTwo));
-    batgiam_img.composite(circleOne.resize(150, 150), 280, 45).composite(circleTwo.resize(150, 150), 130, 90);
+    batgiam_img.composite(circleOne.resize(90, 90), 250, 1).composite(circleTwo.resize(90, 90), 350, 70);
     
     let raw = await batgiam_img.getBufferAsync("image/png");
     
