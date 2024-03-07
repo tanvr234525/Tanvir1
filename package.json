@@ -21,7 +21,6 @@
         "child_process": "^1.0.2",
         "cloudscraper": "^4.6.0",
         "crypto": "latest",
-        "discord-image-generation":"^2.1.0",
         "discord-chatbot": "^2.1.0",
         "dotenv": "^16.0.1",
         "eval": "^0.1.8",
