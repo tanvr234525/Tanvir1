@@ -54,7 +54,7 @@ let gifPath = __dirname + '/Nayan/join/join.gif';
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
-    return api.sendMessage("চলে এসেছি আমি সূর্য বট🥀😉🤖", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 ↤
+    return api.sendMessage("চলে এসেছি আমি জয় বট🥀😉🤖", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 ↤
 🌱আ্ঁ'স্ঁ'সা্ঁ'লা্ঁ'মু্ঁ ও্ঁ'য়া্ঁ'লা্ঁ'ই্ঁ'কু্ঁ'ম্ঁ🥀🌼
 <------------------------------>  
 𝗕𝗼𝘁 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹 !!! 
@@ -67,18 +67,18 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
 <<<<<------------------------------>>>>>
 𝗔𝗻𝗱 𝗙𝗼𝗿 𝗔𝗻𝘆 𝗥𝗲𝗽𝗼𝗿𝘁 𝗢𝗿 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗕𝗼𝘁 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿
 
-۞ 𝗢𝘄𝗻𝗲𝗿 : IT'Z SURJO 
+۞ 𝗢𝘄𝗻𝗲𝗿 : 𝐌𝐃 𝐉𝐔𝐁𝐀𝐄𝐃 𝐀𝐇𝐌𝐌𝐄𝐃 𝐉𝐎𝐘
 
 ✷ 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸: 
-https://www.facebook.com/bad.boy.king.SURJO.0.2
+https://www.facebook.com/tor.real.abbu.picci.joy
 
-❊ 𝗣𝗮𝗿𝘀𝗼𝗻𝗮𝗹 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : https://www.facebook.com/ay.link.niya.jah.420
+❊ 𝗣𝗮𝗿𝘀𝗼𝗻𝗮𝗹 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : https://www.facebook.com/mdjubaet.ahmed.9
 
-✲ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺: 😷😷
+✲ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺: mdjubaetahmed
 
-❁ 𝗘𝗺𝗮𝗶𝗹: 😷
+❁ 𝗘𝗺𝗮𝗶𝗹: mdjubaetahmed124@gmail.com
 
-✿ 𝗪𝗣: 01305002014`, attachment: fs.createReadStream(gifPath)}, threadID));
+✿ 𝗪𝗣: 01709045888`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
 .catch(error => {
     console.error(error);
