@@ -49,7 +49,7 @@ module.exports.run = async function({ api, event, Users }) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
     let gifUrl = 'https://drive.google.com/uc?id=1oHTypzcET9ULp7uKWuxh2VLO1T9RVILv';
-let gifPath = __dirname + '/Nayan/join/scripts/events/Nayan/join/received_1181910666272117.mp4';
+let gifPath = __dirname + '/Nayan/join/scripts/events/Nayan/join/join.gift';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
