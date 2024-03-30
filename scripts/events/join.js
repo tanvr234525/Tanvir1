@@ -49,7 +49,7 @@ module.exports.run = async function({ api, event, Users }) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
     let gifUrl = 'https://drive.google.com/uc?id=1oHTypzcET9ULp7uKWuxh2VLO1T9RVILv';
-let gifPath = __dirname + '/Nayan/join/scripts/events/Nayan/join/join.gift';
+let gifPath = __dirname + '/Nayan/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
@@ -74,9 +74,9 @@ https://www.facebook.com/tor.real.abbu.picci.joy
 
 ❊ 𝗣𝗮𝗿𝘀𝗼𝗻𝗮𝗹 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : https://www.facebook.com/mdjubaet.ahmed.9
 
-✲ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺: mdjubaetahmed
+✲ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺: 𝐦𝐝𝐣𝐮𝐛𝐚𝐞𝐭𝐚𝐡𝐦𝐞𝐝
 
-❁ 𝗘𝗺𝗮𝗶𝗹: mdjubaetahmed124@gmail.com
+❁ 𝗘𝗺𝗮𝗶𝗹: 𝐦𝐝𝐣𝐮𝐛𝐚𝐞𝐭𝐚𝐡𝐦𝐞𝐝124@𝐠𝐦𝐚𝐢𝐥.𝐜𝐨𝐦
 
 ✿ 𝗪𝗣: 01709045888`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
